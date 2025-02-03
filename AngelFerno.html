@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Angel Nova | Sign In</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="./public/img/favicon.png">
+<script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./public/css/bundle.css" />
+    <link rel="stylesheet" href="./public/css/pages/home.css" />
+    <link rel="stylesheet" href="./public/css/scale.css" />
+</head>
+<body class="bg-[#0e0e0e] flex flex-col justify-center">
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-[#0e0e0e] transition-opacity duration-500 loading-screen">
+<div class="text-center">
+<div class="flex items-center justify-center mb-8">
+<svg class="loading-logo " viewBox="0 0 502 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M250.195 0.60498H332.057L260.965 215.105L255.5 233L218 139.988H204L250.195 0.60498Z" fill="white"></path>
+<path class="brown-wing" d="M224.735 252.866C357.304 290.757 412.812 204.755 423.994 157.017L224.196 126.018L224.735 252.866Z" fill="#867A6E"></path>
+<path class="yellow-wing" d="M501.494 92.817C314.797 11.469 229.953 39 210.868 62.934L225.406 151.33C410.428 230.71 486.557 145.396 501.494 92.817Z" fill="#FEEE53"></path>
+<path d="M299.066 278H218.073L204.367 238.127H95.13L81.424 278H0.431152L104.683 0.963989H194.398L299.066 278ZM184.845 175.825L149.541 71.573L114.236 175.825H184.845Z" fill="white"></path>
+</svg>
+</div>
+</div>
+</div>
+
+<header>
+    <div class="2xl:px-16 xl:px-12 lg:px-8 px-6 mt-6">
+        <div class="flex items-center justify-between">
+            <div class="min-[1200px]:hidden flex">
+                <div class="p-4 bg-[#1f1f1f] rounded-full cursor-pointer menu-toggle-button">
+                    <span>
+                        <svg class="w-4 h-4 text-[#ffffff]" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
+                            <line x1="4" x2="20" y1="12" y2="12" />
+                            <line x1="4" x2="20" y1="6" y2="6" />
+                            <line x1="4" x2="20" y1="18" y2="18" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <div>
+                    <a href="/home">
+                        <svg class="h-[30px] w-full" viewBox="0 0 502 278" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M250.195 0.60498H332.057L260.965 215.105L255.5 233L218 139.988H204L250.195 0.60498Z"
+                                fill="white" />
+                            <path
+                                d="M224.735 252.866C357.304 290.757 412.812 204.755 423.994 157.017L224.196 126.018L224.735 252.866Z"
+                                fill="#867A6E" />
+                            <path
+                                d="M501.494 92.817C314.797 11.469 229.953 39 210.868 62.934L225.406 151.33C410.428 230.71 486.557 145.396 501.494 92.817Z"
+                                fill="#FEEE53" />
+                            <path
+                                d="M299.066 278H218.073L204.367 238.127H95.13L81.424 278H0.431152L104.683 0.963989H194.398L299.066 278ZM184.845 175.825L149.541 71.573L114.236 175.825H184.845Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="min-[1200px]:flex hidden items-center gap-x-10">
+                <a href="/home"
+                    class="group flex items-center gap-x-1.5 relative py-2 text-lg text-[#919191] transition-colors duration-300 hover:text-white"
+                    data-active="false">
+                    <svg class="w-5 h-5 -mt-[3px] stroke-[1.5px] group-data-[active=true]:stroke-[2px] group-data-[active=true]:text-white"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 3h18" />
+                        <path d="M20 7H8" />
+                        <path d="M20 11H8" />
+                        <path d="M10 19h10" />
+                        <path d="M8 15h12" />
+                        <path d="M4 3v14" />
+                        <circle cx="4" cy="19" r="2" />
+                    </svg>
+                    <span class="relative z-10 group-data-[active=true]:text-white font-medium">Home</span>
+                    <span
+                        class="absolute bottom-0 left-0 h-0.5 bg-[#ffee53] transition-all duration-300 w-0 group-data-[active=true]:w-[calc(100%+0.75rem)] group-hover:w-[calc(100%+0.75rem)]"
+                        aria-hidden="true"></span>
+                </a>
+                <a href="/easy-drainer"
+                    class="group flex items-center gap-x-1.5 relative py-2 text-lg text-[#919191] transition-colors duration-300 hover:text-white"
+                    data-active="false">
+                    <svg class="w-5 h-5 -mt-[3px] stroke-[1.5px] group-data-[active=true]:stroke-[2px] group-data-[active=true]:text-white"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M12 5a3 3 0 1 0-5.997.142 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588 4 4 0 0 0 7.636 2.106 3.2 3.2 0 0 0 .164-.546c.028-.13.306-.13.335 0a3.2 3.2 0 0 0 .163.546 4 4 0 0 0 7.636-2.106 4 4 0 0 0 .556-6.588 4 4 0 0 0-2.526-5.77A3 3 0 1 0 12 5" />
+                        <path d="M17.599 6.5a3 3 0 0 0 .399-1.375" />
+                        <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5" />
+                        <path d="M3.477 10.896a4 4 0 0 1 .585-.396" />
+                        <path d="M19.938 10.5a4 4 0 0 1 .585.396" />
+                        <path d="M6 18a4 4 0 0 1-1.967-.516" />
+                        <path d="M19.967 17.484A4 4 0 0 1 18 18" />
+                        <circle cx="12" cy="12" r="3" />
+                        <path d="m15.7 10.4-.9.4" />
+                        <path d="m9.2 13.2-.9.4" />
+                        <path d="m13.6 15.7-.4-.9" />
+                        <path d="m10.8 9.2-.4-.9" />
+                        <path d="m15.7 13.5-.9-.4" />
+                        <path d="m9.2 10.9-.9-.4" />
+                        <path d="m10.5 15.7.4-.9" />
+                        <path d="m13.1 9.2.4-.9" />
+                    </svg>
+                    <span class="relative z-10 group-data-[active=true]:text-white">Drainer</span>
+                    <span
+                        class="absolute bottom-0 left-0 h-0.5 bg-[#ffee53] transition-all duration-300 w-0 group-data-[active=true]:w-[calc(100%+0.75rem)] group-hover:w-[calc(100%+0.75rem)]"
+                        aria-hidden="true"></span>
+                </a>
+                <a href="/logs"
+                    class="group flex items-center gap-x-1.5 relative py-2 text-lg text-[#919191] transition-colors duration-300 hover:text-white"
+                    data-active="false">
+                    <svg class="w-5 h-5 -mt-[3px] stroke-[1.5px] group-data-[active=true]:stroke-[2px] group-data-[active=true]:text-white"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                        <path d="M16 22h2a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3.5" />
+                        <path d="M4.017 11.512a6 6 0 1 0 8.466 8.475" />
+                        <path
+                            d="M9 16a1 1 0 0 1-1-1v-4c0-.552.45-1.008.995-.917a6 6 0 0 1 4.922 4.922c.091.544-.365.995-.917.995z" />
+                    </svg>
+                    <span class="relative z-10 group-data-[active=true]:text-white">Logs</span>
+                    <span
+                        class="absolute bottom-0 left-0 h-0.5 bg-[#ffee53] transition-all duration-300 w-0 group-data-[active=true]:w-[calc(100%+0.75rem)] group-hover:w-[calc(100%+0.75rem)]"
+                        aria-hidden="true"></span>
+                </a>
+                <a href="/auto-transfer"
+                    class="group flex items-center gap-x-1.5 relative py-2 text-lg text-[#919191] transition-colors duration-300 hover:text-white"
+                    data-active="false">
+                    <svg class="w-5 h-5 -mt-[3px] stroke-[1.5px] group-data-[active=true]:stroke-[2px] group-data-[active=true]:text-white"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M16.466 7.5C15.643 4.237 13.952 2 12 2 9.239 2 7 6.477 7 12s2.239 10 5 10c.342 0 .677-.069 1-.2" />
+                        <path d="m15.194 13.707 3.814 1.86-1.86 3.814" />
+                        <path
+                            d="M19 15.57c-1.804.885-4.274 1.43-7 1.43-5.523 0-10-2.239-10-5s4.477-5 10-5c4.838 0 8.873 1.718 9.8 4" />
+                    </svg>
+                    <span class="relative z-10 group-data-[active=true]:text-white">Transfer</span>
+                    <span
+                        class="absolute bottom-0 left-0 h-0.5 bg-[#ffee53] transition-all duration-300 w-0 group-data-[active=true]:w-[calc(100%+0.75rem)] group-hover:w-[calc(100%+0.75rem)]"
+                        aria-hidden="true"></span>
+                </a>
+                <a href="/landings"
+                    class="group flex items-center gap-x-1.5 relative py-2 text-lg text-[#919191] transition-colors duration-300 hover:text-white"
+                    data-active="false">
+                    <svg class="w-5 h-5 -mt-[3px] stroke-[1.5px] group-data-[active=true]:stroke-[2px] group-data-[active=true]:text-white"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <rect width="20" height="16" x="2" y="4" rx="2" />
+                        <path d="M6 8h.01" />
+                        <path d="M10 8h.01" />
+                        <path d="M14 8h.01" /></svg>
+                    <span class="relative z-10 group-data-[active=true]:text-white">Landings</span>
+                    <span
+                        class="absolute bottom-0 left-0 h-0.5 bg-[#ffee53] transition-all duration-300 w-0 group-data-[active=true]:w-[calc(100%+0.75rem)] group-hover:w-[calc(100%+0.75rem)]"
+                        aria-hidden="true"></span>
+                </a>
+                <a href="/verified-vendors"
+                    class="group flex items-center gap-x-1.5 relative py-2 text-lg text-[#919191] transition-colors duration-300 hover:text-white"
+                    data-active="false">
+                    <svg class="w-5 h-5 -mt-[3px] stroke-[1.5px] group-data-[active=true]:stroke-[2px] group-data-[active=true]:text-white"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                        <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                        <path d="M8 12h8" />
+                        <path d="M10 11v2" />
+                        <path d="M8 17h8" />
+                        <path d="M14 16v2" />
+                    </svg>
+                    <span class="relative z-10 group-data-[active=true]:text-white">Vendors</span>
+                    <span
+                        class="absolute bottom-0 left-0 h-0.5 bg-[#ffee53] transition-all duration-300 w-0 group-data-[active=true]:w-[calc(100%+0.75rem)] group-hover:w-[calc(100%+0.75rem)]"
+                        aria-hidden="true"></span>
+                </a>
+                <a href="/support"
+                    class="group flex items-center gap-x-1.5 relative py-2 text-lg text-[#919191] transition-colors duration-300 hover:text-white"
+                    data-active="false">
+                    <svg class="w-5 h-5 -mt-[3px] stroke-[1.5px] group-data-[active=true]:stroke-[2px] group-data-[active=true]:text-white"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 3h18" />
+                        <path d="M20 7H8" />
+                        <path d="M20 11H8" />
+                        <path d="M10 19h10" />
+                        <path d="M8 15h12" />
+                        <path d="M4 3v14" />
+                        <circle cx="4" cy="19" r="2" />
+                    </svg>
+                    <span class="relative z-10 group-data-[active=true]:text-white font-medium">Support</span>
+                    <span
+                        class="absolute bottom-0 left-0 h-0.5 bg-[#ffee53] transition-all duration-300 w-0 group-data-[active=true]:w-[calc(100%+0.75rem)] group-hover:w-[calc(100%+0.75rem)]"
+                        aria-hidden="true"></span>
+                </a>
+                <a href="/settings"
+                    class="group min-[1200px]:hidden block items-center gap-x-1.5 relative py-2 text-lg text-[#919191] transition-colors duration-300 hover:text-white"
+                    data-active="false">
+                    <svg class="w-5 h-5 -mt-[3px] stroke-[1.5px] group-data-[active=true]:stroke-[2px] group-data-[active=true]:text-white"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M20 7h-9" />
+                        <path d="M14 17H5" />
+                        <circle cx="17" cy="17" r="3" />
+                        <circle cx="7" cy="7" r="3" />
+                    </svg>
+                    <span class="relative z-10 group-data-[active=true]:text-white">Settings</span>
+                    <span
+                        class="absolute bottom-0 left-0 h-0.5 bg-[#ffee53] transition-all duration-300 w-0 group-data-[active=true]:w-[calc(100%+0.75rem)] group-hover:w-[calc(100%+0.75rem)]"
+                        aria-hidden="true"></span>
+                </a>
+                <a href="/logout"
+                    class="group min-[1200px]:hidden block items-center gap-x-1.5 relative py-2 text-lg text-[#919191] transition-colors duration-300 hover:text-white"
+                    data-active="false">
+                    <svg class="w-5 h-5 -mt-[3px] stroke-[1.5px] group-data-[active=true]:stroke-[2px] group-data-[active=true]:text-white"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-log-out">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                        <polyline points="16 17 21 12 16 7" />
+                        <line x1="21" x2="9" y1="12" y2="12" />
+                    </svg>
+                    <span class="relative z-10 group-data-[active=true]:text-white">Logout</span>
+                    <span
+                        class="absolute bottom-0 left-0 h-0.5 bg-[#ffee53] transition-all duration-300 w-0 group-data-[active=true]:w-[calc(100%+0.75rem)] group-hover:w-[calc(100%+0.75rem)]"
+                        aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="flex items-center gap-x-2">
+                <a href="/news"
+                    class="relative border-2 border-transparent min-[1200px]:block hidden p-4 bg-[#1f1f1f] rounded-full transition-all duration-300 hover:bg-[#313131] active:scale-95 data-[active=true]:border-[#feee53]"
+                    data-active="true">
+                    <svg class="w-4 h-4 text-[#ffffff]" xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bell">
+                        <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+                        <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" /></svg>
+                    <div
+                        class="w-2 h-2 rounded-full bg-[#ff5454] absolute top-[15px] right-[15px] animate-bounce">
+                    </div>
+                </a>
+                <a href="/settings"
+                    class="border-2 border-transparent min-[1200px]:block hidden p-4 bg-[#1f1f1f] rounded-full transition-all duration-300 hover:bg-[#313131] active:scale-95 data-[active=true]:border-[#feee53]"
+                    data-active="false">
+                    <svg class="w-4 h-4 text-[#ffffff]" xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 7h-9" />
+                        <path d="M14 17H5" />
+                        <circle cx="17" cy="17" r="3" />
+                        <circle cx="7" cy="7" r="3" />
+                    </svg>
+                </a>
+                <a href="/logout"
+                    class="border-2 border-transparent min-[1200px]:block hidden p-4 bg-[#1f1f1f] rounded-full transition-all duration-300 hover:bg-[#313131] active:scale-95">
+                    <svg class="w-4 h-4 text-[#ffffff]" xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                        <polyline points="16 17 21 12 16 7" />
+                        <line x1="21" x2="9" y1="12" y2="12" />
+                    </svg>
+                </a>
+                <div
+                    class="border-2 border-transparent w-12 h-12 bg-[#ffee53] rounded-full flex items-center justify-center">
+                    <span class="text-[16px] text-[#86796d] font-medium pointer-events-none">A</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="mobile-menu fixed inset-0 bg-[#0e0e0e] transform translate-x-full transition-transform duration-300 ease-in-out z-50 overflow-y-auto"
+    data-menu-open="false">
+    <div class="flex flex-col h-full p-6">
+        <div class="flex justify-between items-center mb-10">
+            <h2 class="text-white text-2xl font-bold">Angel</h2>
+            <button
+                class="close-menu p-4 bg-[#1f1f1f] rounded-full transition-all duration-300 hover:bg-[#313131] active:scale-95">
+                <svg class="w-4 h-4 text-[#ffffff]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <nav class="flex-grow">
+            <ul class="space-y-6">
+                <li>
+                    <a href="/home"
+                        class="group flex items-center gap-x-1.5 relative py-2 text-lg text-[#919191] transition-colors duration-300 hover:text-white"
+                        data-active="false">
+                        <svg class="w-5 h-5 -mt-[3px] stroke-[1.5px] group-data-[active=true]:stroke-[2px] group-data-[active=true]:text-white"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 3h18" />
+                            <path d="M20 7H8" />
+                            <path d="M20 11H8" />
+                            <path d="M10 19h10" />
+                            <path d="M8 15h12" />
+                            <path d="M4 3v14" />
+                            <circle cx="4" cy="19" r="2" />
+                        </svg>
+                        <span class="relative z-10 group-data-[active=true]:text-white font-medium">Home</span>
+                        <span
+                            class="absolute bottom-0 left-0 h-0.5 bg-[#ffee53] transition-all duration-300 w-0 group-data-[active=true]:w-full group-hover:w-full"
+                            aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/easy-drainer"
+                        class="group flex items-center gap-x-1.5 relative py-2 text-lg text-[#919191] transition-colors duration-300 hover:text-white"
+                        data-active="false">
+                        <svg class="w-5 h-5 -mt-[3px] stroke-[1.5px] group-data-[active=true]:stroke-[2px] group-data-[active=true]:text-white"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M12 5a3 3 0 1 0-5.997.142 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588 4 4 0 0 0 7.636 2.106 3.2 3.2 0 0 0 .164-.546c.028-.13.306-.13.335 0a3.2 3.2 0 0 0 .163.546 4 4 0 0 0 7.636-2.106 4 4 0 0 0 .556-6.588 4 4 0 0 0-2.526-5.77A3 3 0 1 0 12 5" />
+                            <path d="M17.599 6.5a3 3 0 0 0 .399-1.375" />
+                            <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5" />
+                            <path d="M3.477 10.896a4 4 0 0 1 .585-.396" />
+                            <path d="M19.938 10.5a4 4 0 0 1 .585.396" />
+                            <path d="M6 18a4 4 0 0 1-1.967-.516" />
+                            <path d="M19.967 17.484A4 4 0 0 1 18 18" />
+                            <circle cx="12" cy="12" r="3" />
+                            <path d="m15.7 10.4-.9.4" />
+                            <path d="m9.2 13.2-.9.4" />
+                            <path d="m13.6 15.7-.4-.9" />
+                            <path d="m10.8 9.2-.4-.9" />
+                            <path d="m15.7 13.5-.9-.4" />
+                            <path d="m9.2 10.9-.9-.4" />
+                            <path d="m10.5 15.7.4-.9" />
+                            <path d="m13.1 9.2.4-.9" />
+                        </svg>
+                        <span class="relative z-10 group-data-[active=true]:text-white">Drainer</span>
+                        <span
+                            class="absolute bottom-0 left-0 h-0.5 bg-[#ffee53] transition-all duration-300 w-0 group-data-[active=true]:w-full group-hover:w-full"
+                            aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/logs"
+                        class="group flex items-center gap-x-1.5 relative py-2 text-lg text-[#919191] transition-colors duration-300 hover:text-white"
+                        data-active="false">
+                        <svg class="w-5 h-5 -mt-[3px] stroke-[1.5px] group-data-[active=true]:stroke-[2px] group-data-[active=true]:text-white"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                            <path d="M16 22h2a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3.5" />
+                            <path d="M4.017 11.512a6 6 0 1 0 8.466 8.475" />
+                            <path
+                                d="M9 16a1 1 0 0 1-1-1v-4c0-.552.45-1.008.995-.917a6 6 0 0 1 4.922 4.922c.091.544-.365.995-.917.995z" />
+                        </svg>
+                        <span class="relative z-10 group-data-[active=true]:text-white">Logs</span>
+                        <span
+                            class="absolute bottom-0 left-0 h-0.5 bg-[#ffee53] transition-all duration-300 w-0 group-data-[active=true]:w-full group-hover:w-full"
+                            aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/auto-transfer"
+                        class="group flex items-center gap-x-1.5 relative py-2 text-lg text-[#919191] transition-colors duration-300 hover:text-white"
+                        data-active="false">
+                        <svg class="w-5 h-5 -mt-[3px] stroke-[1.5px] group-data-[active=true]:stroke-[2px] group-data-[active=true]:text-white"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M16.466 7.5C15.643 4.237 13.952 2 12 2 9.239 2 7 6.477 7 12s2.239 10 5 10c.342 0 .677-.069 1-.2" />
+                            <path d="m15.194 13.707 3.814 1.86-1.86 3.814" />
+                            <path
+                                d="M19 15.57c-1.804.885-4.274 1.43-7 1.43-5.523 0-10-2.239-10-5s4.477-5 10-5c4.838 0 8.873 1.718 9.8 4" />
+                        </svg>
+                        <span class="relative z-10 group-data-[active=true]:text-white">Auto-Transfer</span>
+                        <span
+                            class="absolute bottom-0 left-0 h-0.5 bg-[#ffee53] transition-all duration-300 w-0 group-data-[active=true]:w-full group-hover:w-full"
+                            aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/landings"
+                        class="group flex items-center gap-x-1.5 relative py-2 text-lg text-[#919191] transition-colors duration-300 hover:text-white"
+                        data-active="false">
+                        <svg class="w-5 h-5 -mt-[3px] stroke-[1.5px] group-data-[active=true]:stroke-[2px] group-data-[active=true]:text-white"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <rect width="20" height="16" x="2" y="4" rx="2" />
+                            <path d="M6 8h.01" />
+                            <path d="M10 8h.01" />
+                            <path d="M14 8h.01" /></svg>
+                        <span class="relative z-10 group-data-[active=true]:text-white">Landings</span>
+                        <span
+                            class="absolute bottom-0 left-0 h-0.5 bg-[#ffee53] transition-all duration-300 w-0 group-data-[active=true]:w-full group-hover:w-full"
+                            aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/configs"
+                        class="group flex items-center gap-x-1.5 relative py-2 text-lg text-[#919191] transition-colors duration-300 hover:text-white"
+                        data-active="false">
+                        <svg class="w-5 h-5 -mt-[3px] stroke-[1.5px] group-data-[active=true]:stroke-[2px] group-data-[active=true]:text-white"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                            <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                            <path d="M8 12h8" />
+                            <path d="M10 11v2" />
+                            <path d="M8 17h8" />
+                            <path d="M14 16v2" />
+                        </svg>
+                        <span class="relative z-10 group-data-[active=true]:text-white">Configs</span>
+                        <span
+                            class="absolute bottom-0 left-0 h-0.5 bg-[#ffee53] transition-all duration-300 w-0 group-data-[active=true]:w-full group-hover:w-full"
+                            aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/news"
+                        class="group flex items-center gap-x-1.5 relative py-2 text-lg text-[#919191] transition-colors duration-300 hover:text-white"
+                        data-active="true">
+                        <svg class="w-5 h-5 -mt-[3px] stroke-[1.5px] group-data-[active=true]:stroke-[2px] group-data-[active=true]:text-white"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2" />
+                            <path d="M18 14h-8" />
+                            <path d="M15 18h-5" />
+                            <path d="M10 6h8v4h-8V6Z" /></svg>
+                        <span class="relative z-10 group-data-[active=true]:text-white font-medium">News</span>
+                        <span
+                            class="absolute bottom-0 left-0 h-0.5 bg-[#ffee53] transition-all duration-300 w-0 group-data-[active=true]:w-full group-hover:w-full"
+                            aria-hidden="true"></span>
+                        <div
+                            class="w-2 h-2 rounded-full bg-[#ff5454] absolute top-[15px] right-[15px] animate-pulse group-data-[active=true]:hidden">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/settings"
+                        class="group flex items-center gap-x-1.5 relative py-2 text-lg text-[#919191] transition-colors duration-300 hover:text-white"
+                        data-active="false">
+                        <svg class="w-5 h-5 -mt-[3px] stroke-[1.5px] group-data-[active=true]:stroke-[2px] group-data-[active=true]:text-white"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M20 7h-9" />
+                            <path d="M14 17H5" />
+                            <circle cx="17" cy="17" r="3" />
+                            <circle cx="7" cy="7" r="3" />
+                        </svg>
+                        <span class="relative z-10 group-data-[active=true]:text-white">Settings</span>
+                        <span
+                            class="absolute bottom-0 left-0 h-0.5 bg-[#ffee53] transition-all duration-300 w-0 group-data-[active=true]:w-full group-hover:w-full"
+                            aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/logout"
+                        class="group flex items-center gap-x-1.5 relative py-2 text-lg text-[#919191] transition-colors duration-300 hover:text-white"
+                        data-active="false">
+                        <svg class="w-5 h-5 -mt-[3px] stroke-[1.5px] group-data-[active=true]:stroke-[2px] group-data-[active=true]:text-white"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-log-out">
+                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                            <polyline points="16 17 21 12 16 7" />
+                            <line x1="21" x2="9" y1="12" y2="12" />
+                        </svg>
+                        <span class="relative z-10 group-data-[active=true]:text-white">Logout</span>
+                        <span
+                            class="absolute bottom-0 left-0 h-0.5 bg-[#ffee53] transition-all duration-300 w-0 group-data-[active=true]:w-full group-hover:w-full"
+                            aria-hidden="true"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="mt-auto pt-6">
+            <button type="button"
+                class="group flex items-center gap-x-1.5 relative py-2 text-lg text-[#919191] transition-colors duration-300 hover:text-white opacity-10 hover:opacity-100 w-full easter-egg-button">
+                <svg class="w-5 h-5 -mt-[3px] stroke-[1.5px]" xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-egg">
+                    <path
+                        d="M12 22c6.23-.05 7.87-5.57 7.5-10-.36-4.34-3.95-9.96-7.5-10-3.55.04-7.14 5.66-7.5 10-.37 4.43 1.27 9.95 7.5 10z" />
+                    </svg>
+                <span class="relative z-10">Hmmm, Angel, #1 Drainer!</span>
+                <span
+                    class="absolute bottom-0 left-0 h-0.5 bg-[#ffee53] transition-all duration-300 w-0 group-hover:w-full"
+                    aria-hidden="true"></span>
+                </bÑ‚Ð¸>
+        </div>
+    </div>
+</div>
+
+<section class="w-full px-4 sm:px-6 lg:px-8 flex flex-col items-center main-content">
+<div class="2xl:mb-16 mb-12 mt-16">
+<svg class="h-[60px] w-full" viewBox="0 0 502 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M250.195 0.60498H332.057L260.965 215.105L255.5 233L218 139.988H204L250.195 0.60498Z" fill="white"/>
+<path d="M224.735 252.866C357.304 290.757 412.812 204.755 423.994 157.017L224.196 126.018L224.735 252.866Z" fill="#867A6E"/>
+<path d="M501.494 92.817C314.797 11.469 229.953 39 210.868 62.934L225.406 151.33C410.428 230.71 486.557 145.396 501.494 92.817Z" fill="#FEEE53"/>
+<path d="M299.066 278H218.073L204.367 238.127H95.13L81.424 278H0.431152L104.683 0.963989H194.398L299.066 278ZM184.845 175.825L149.541 71.573L114.236 175.825H184.845Z" fill="white"/>
+</svg>
+</div>
+<div class="w-full max-w-[500px] px-4">
+<div class="w-full min-h-[200px] bg-[#1f1f1f] border border-[#212121] rounded-[20px]">
+<div class="px-8 py-8">
+<div>
+    <span class="text-white text-[24px]">Welcome to 
+        <span class="text-[red] font-semibold" style="background: linear-gradient(to right, #ff0000, #a00351); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Angel</span>
+      </span>
+</div>
+<div class="mb-6">
+<span class="text-[#636363]">&#8211; authorization</span>
+</div>
+<div class="mb-4">
+<div class="relative group authorization-key-group" data-valid="undefined">
+<div class="absolute text-[#636363] transition-colors duration-300 ease-in-out top-[10px] left-[16px] pointer-events-none
+group-hover:text-[#b7b7b7]
+group-focus:text-[#ffffff]
+group-data-[valid=false]:text-[#d33c3c] group-data-[valid=true]:text-[#9dd33c]">
+<svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="m15.5 7.5 2.3 2.3a1 1 0 0 0 1.4 0l2.1-2.1a1 1 0 0 0 0-1.4L19 4"/><path d="m21 2-9.6 9.6"/><circle cx="7.5" cy="15.5" r="5.5"/></svg>
+</div>
+<input type="text"
+class="peer w-full pl-12 pr-4 py-2.5 border border-[#636363] text-[#636363] rounded-[20px] bg-[#1f1f1f] text-[14px] outline-none transition-colors duration-300 ease-in-out authorization-key-input
+placeholder-[#636363]
+hover:border-[#b7b7b7] hover:placeholder:text-[#b7b7b7]
+focus:border-[#ffeb31] focus:placeholder:text-[#b7b7b7] focus:text-[#ffffff]
+active:border-[#fbf5bf] active:text-[#ffffff]
+group-data-[valid=false]:text-[#d33c3c] group-data-[valid=true]:text-[#9dd33c]
+group-data-[valid=false]:border-[#d33c3c] group-data-[valid=true]:border-[#9dd33c]"
+placeholder="Access Key">
+</div>
+</div>
+<div class="mb-6">
+<div class="relative group password-group" data-valid="undefined">
+<div class="absolute text-[#636363] transition-colors duration-300 ease-in-out top-[11px] left-[16px] pointer-events-none
+group-hover:text-[#b7b7b7]
+group-focus:text-[#ffffff]
+group-data-[valid=false]:text-[#d33c3c] group-data-[valid=true]:text-[#9dd33c]">
+<svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-asterisk"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M12 8v8"/><path d="m8.5 14 7-4"/><path d="m8.5 10 7 4"/></svg>
+</div>
+<input type="password"
+class="peer w-full pl-12 pr-12 py-2.5 border border-[#636363] text-[#636363] rounded-[20px] bg-[#1f1f1f] text-[14px] outline-none transition-colors duration-300 ease-in-out password-input
+placeholder-[#636363]
+hover:border-[#b7b7b7] hover:placeholder:text-[#b7b7b7]
+focus:border-[#ffeb31] focus:placeholder:text-[#b7b7b7] focus:text-[#ffffff]
+active:border-[#fbf5bf] active:text-[#ffffff]
+group-data-[valid=false]:text-[#d33c3c] group-data-[valid=true]:text-[#9dd33c]
+group-data-[valid=false]:border-[#d33c3c] group-data-[valid=true]:border-[#9dd33c]"
+placeholder="Password">
+<div class="absolute top-[5.5px] right-[8px]">
+<button type="button"
+class="group cursor-pointer text-[#ffffff] transition-all duration-300 ease-in-out bg-[#63636336] rounded-full p-1.5 toggle-password-button
+hover:bg-[#6363636e]
+active:scale-105"
+data-state="hidden">
+<svg class="w-5 h-5 block group-data-[state=hidden]:block group-data-[state=visible]:hidden"
+xmlns="http://www.w3.org/2000/svg"
+width="24"
+height="24"
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="1"
+stroke-linecap="round"
+stroke-linejoin="round">
+<path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/>
+<circle cx="12" cy="12" r="3"/>
+</svg>
+<svg class="w-5 h-5 hidden group-data-[state=hidden]:hidden group-data-[state=visible]:block"
+xmlns="http://www.w3.org/2000/svg"
+width="24"
+height="24"
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="1"
+stroke-linecap="round"
+stroke-linejoin="round">
+<path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"/>
+<path d="M14.084 14.158a3 3 0 0 1-4.242-4.242"/>
+<path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"/>
+<path d="m2 2 20 20"/>
+</svg>
+</button>
+</div>
+</div>
+</div>
+<div>
+<button onclick="tryLogin()" type="button" class="flex items-center justify-center w-full gap-x-2 text-[#ffffff] bg-[#63636336] text-[14px] py-2.5 rounded-[20px] transition-all duration-300 hover:bg-[#6363636e] active:scale-95 sign-in-button">
+<div>
+<svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-in"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" x2="3" y1="12" y2="12"/></svg>
+</div>
+<div class="mt-[2px]">
+<span>Sign in</span>
+</div>
+</button>
+</div>
+</div>
+    <div class="mb-[15px]" style="text-align: center;">
+    <a href="https://t.me/AngelNovaBot" style="color: #ffee53; font-weight: bold;">Get Access<span style="font-size: 12px;">&rarr;</span></a>
+    </div>
+</div>
+</div>
+</section>
+<div id="error-message" class="hh error-message hldden" style=" pointer-events: none; padding: 16px; display: flex; align-items: center; font-family: Arial, sans-serif; width: fit-content; margin: 20px auto;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 12px;">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M8 15c1.5 1.5 3.5 1.5 5 0" />
+        <line x1="9" y1="10" x2="10" y2="10" />
+        <line x1="14" y1="10" x2="15" y2="10" />
+    </svg>
+    <div style="flex: 1;">
+        <strong style="color: #fff;">Error!</strong><br>
+        Incorrect authorization data.<br>
+        <a href="https://t.me/AngelNovaBot" class="text-[#ffee53]" style="pointer-events: auto; color: #ffee53; text-decoration: none; font-weight: bold;">Sign Up Here <span style="font-size: 14px;">&rarr;</span></a>
+    </div>
+</div>
+
+
+
+<script src="./public/js/plugins/jquery-3.7.1.min.js"></script>
+<script src="./public/js/main.js"></script>
+<script src="./public/js/pages/sign-in.js"></script>
+<script src="./public/js/popper.min.js"></script>
+<script src="./public/js/tippy-bundle.umd.min.js"></script>
+<script src="./public/js/common.js"></script>
+
+<script>
+    function tryLogin() {
+        const errorMessage = document.getElementById('error-message');
+
+        // Delay execution by 1 second (1000 milliseconds)
+        setTimeout(() => {
+            errorMessage.classList.remove('hldden');
+            errorMessage.classList.add('vlsible');
+
+            // Hide after 15 seconds
+            setTimeout(() => {
+                errorMessage.classList.remove('vlsible');
+                errorMessage.classList.add('hldden');
+            }, 15000); // Hide after 15 seconds
+        }, 500); // Delay execution by 1 second
+    }
+</script>
+
+
+</body>
+</html>
